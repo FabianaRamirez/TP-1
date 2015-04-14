@@ -1,13 +1,12 @@
 /*
  * Mostrar Tabla de Temperaturas de Celsius a Fahrenheit
  * Fabiana Maria Anahi Ramirez
- * 12/04/2015
+ * 14/04/2015
  */
 
 #include <stdio.h>
 
-int main()
-{
+int main(void){
     float fahr, celsius;
     int inicio = 0;
     int limite = 300;
@@ -17,7 +16,7 @@ int main()
     printf("%8s %12s", "Celsius", "Fahrenheit\n");
     while(celsius <= limite){
         fahr = (celsius * (9.0/5.0)) + 32.0;
-         printf("%5.0f %11.1f\n",celsius, fahr);
+        printf("%5.0f %11.1f\n",celsius, fahr);
         celsius = celsius + cont;
     }
 }
